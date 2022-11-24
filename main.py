@@ -11,9 +11,9 @@ se = search.Search()
 app.config['SECRET_KEY'] = 'Am bagat un xanny in my lean' 
 
 
-@app.route('/../statice/<path:path>')
+@app.route('/statice/<path:path>')
 def send_report(path):
-    return send_from_directory('../statice', path)
+    return send_from_directory('statice', path)
 
 @app.route("/")
 def ikljfk():
